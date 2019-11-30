@@ -20,12 +20,22 @@
         <i-grid-label>{{grid.title}}</i-grid-label>
     </i-grid-item>
   </i-grid>
+
   <i-grid i-class="no-border">
     <i-grid-item @click="goType(krid)" v-for="krid in krids" :key="krid" i-class="no-border">
         <i-grid-icon>
             <image :src="krid.image" />
         </i-grid-icon>
         <i-grid-label>{{krid.title}}</i-grid-label>
+    </i-grid-item>
+  </i-grid>
+
+  <i-grid i-class="no-border">
+    <i-grid-item @click="goType(crid)" v-for="crid in crids" :key="crid" i-class="no-border">
+        <i-grid-icon>
+            <image :src="crid.image" />
+        </i-grid-icon>
+        <i-grid-label>{{crid.title}}</i-grid-label>
     </i-grid-item>
   </i-grid>
 
@@ -52,11 +62,18 @@ export default {
         {title:"强调句",image:"/static/images/4.png"}
       ],
       
-        krids: [
+      krids: [
         {title:"名词",image:"/static/images/5.png"},
         {title:"连词",image:"/static/images/6.png"},
         {title:"动词",image:"/static/images/7.png"},
         {title:"情态动词",image:"/static/images/8.png"}
+      ],
+
+      crids: [
+        {title:"定语从句",image:"/static/images/9.png"},
+        {title:"主语从句",image:"/static/images/10.png"},
+        {title:"状语从句",image:"/static/images/11.png"},
+        {title:"宾语从句",image:"/static/images/12.png"}
       ],
 
       imgUrls: [
