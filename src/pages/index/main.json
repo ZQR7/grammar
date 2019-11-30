@@ -1,11 +1,11 @@
 {
     "navigationBarTitleText": "英语语法学习",
     "usingComponents": {
-        "i-grid": "../../../static/dist copy/grid/index",
-        "i-grid-item": "../../../static/dist copy/grid-item/index",
-        "i-grid-icon": "../../../static/dist copy/grid-icon/index",
-        "i-grid-label": "../../../static/dist copy/grid-label/index",
-        "i-panel": "../../../static/dist copy/panel/index",
-        "i-card": "../../../static/dist copy/card/index"
+        "i-grid": "../../../static/dist/grid/index",
+        "i-grid-item": "../../../static/dist/grid-item/index",
+        "i-grid-icon": "../../../static/dist/grid-icon/index",
+        "i-grid-label": "../../../static/dist/grid-label/index",
+        "i-panel": "../../../static/dist/panel/index",
+        "i-card": "../../../static/dist/card/index"
     }
 }
