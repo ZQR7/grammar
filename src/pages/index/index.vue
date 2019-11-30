@@ -17,6 +17,16 @@
         <i-grid-label>{{krid.title}}</i-grid-label>
     </i-grid-item>
   </i-grid>
+  
+   <i-grid i-class="no-border">
+    <i-grid-item @click="goType(crid)" v-for="crid in crids" :key="crid" i-class="no-border">
+        <i-grid-icon>
+            <image :src="crid.image" />
+        </i-grid-icon>
+        <i-grid-label>{{crid.title}}</i-grid-label>
+    </i-grid-item>
+  </i-grid>
+
 
   </div>
 </template>
@@ -28,15 +38,23 @@ export default {
       
       grids: [
         {title:"定语",image:"/static/images/1.png"},
-        {title:"定语从句",image:"/static/images/2.png"},
+        {title:"状语",image:"/static/images/2.png"},
         {title:"倒装句",image:"/static/images/3.png"},
         {title:"强调句",image:"/static/images/4.png"}
       ],
 
       krids: [
-        {title:"状语",image:"/static/images/5.png"},
-        {title:"主语从句",image:"/static/images/6.png"},
+        {title:"名词",image:"/static/images/5.png"},
+        {title:"连词",image:"/static/images/6.png"},
         {title:"动词",image:"/static/images/7.png"},
+        {title:"情态动词",image:"/static/images/8.png"}
+      ],
+
+      
+      crids: [
+        {title:"定语从句",image:"/static/images/5.png"},
+        {title:"主语从句",image:"/static/images/6.png"},
+        {title:"状语从句",image:"/static/images/7.png"},
         {title:"宾语从句",image:"/static/images/8.png"}
       ],
 
@@ -44,6 +62,11 @@ export default {
   },
 
   methods: {
+     goType(type){
+      console.log(type)
+      let url = '../list/main?type=' + type.title
+      mpvue.navigateTo({ url })
+    }
   },
 
   created () {
@@ -51,5 +74,12 @@ export default {
 }
 </script>
 
+
 <style scoped>
+div >>> .no-border {
+  border-width: 0pt;
+}
+div >>> .split {
+  margin-bottom: 10pt;
+}
 </style>
