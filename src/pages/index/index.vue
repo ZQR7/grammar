@@ -52,10 +52,10 @@ export default {
 
       
       crids: [
-        {title:"定语从句",image:"/static/images/5.png"},
-        {title:"主语从句",image:"/static/images/6.png"},
-        {title:"状语从句",image:"/static/images/7.png"},
-        {title:"宾语从句",image:"/static/images/8.png"}
+        {title:"定语从句",image:"/static/images/9.png"},
+        {title:"主语从句",image:"/static/images/10.png"},
+        {title:"状语从句",image:"/static/images/11.png"},
+        {title:"宾语从句",image:"/static/images/12.png"}
       ],
 
     }
