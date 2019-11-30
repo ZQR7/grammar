@@ -2,7 +2,7 @@
   <div>
       <i-card v-for="item in list" :key="item" i-class="split" :extra="item.name" :thumb="item.image">
           <view slot="content">{{item.remark}}</view>
-          <view slot="footer">{{item.address}}</view>
+          <view slot="footer">{{item.content}}</view>
       </i-card>
   </div>
 </template>
