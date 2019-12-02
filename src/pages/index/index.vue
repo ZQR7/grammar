@@ -78,8 +78,7 @@ export default {
 
       imgUrls: [
         'cloud://zqr7-uz0xj.7a71-zqr7-uz0xj-1300800368/1.jpg',
-        'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-        'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+        'cloud://zqr7-uz0xj.7a71-zqr7-uz0xj-1300800368/2.jpg'
       ],
       indicatorDots: true,
       autoplay: false,
