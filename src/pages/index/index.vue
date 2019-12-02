@@ -8,7 +8,7 @@
     >
       <block v-for="img in imgUrls" :key="img">
         <swiper-item>
-          <image :src="img" style="width:100%" />
+          <image :src="img" style="width:100% ;height:100%" />
         </swiper-item>
       </block>
     </swiper>
@@ -77,11 +77,11 @@ export default {
       ],
 
       imgUrls: [
-        'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+        'cloud://zqr7-uz0xj.7a71-zqr7-uz0xj-1300800368/1.jpg',
         'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
         'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
       ],
-      indicatorDots: false,
+      indicatorDots: true,
       autoplay: false,
       interval: 5000,
       duration: 1000
